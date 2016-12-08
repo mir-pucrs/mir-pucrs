@@ -1,0 +1,44 @@
+# Site settings
+name: mir pucrs
+email:
+author:
+
+keywords: machine intelligence robotics
+description: Organization website.
+
+# Only use this if you are serving your site via Github Pages
+github:
+  url: "https://mir-pucrs.github.io"
+
+# header: yes
+# header_sm: images/banner-small.jpg
+# header_med: images/banner-med.jpg
+# header_large: images/banner-large.jpg
+# header_xl: images/banner-xl.jpg
+
+# Exclude our ruby stuff
+exclude: [.bundle, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, .last_optimized]
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+destination: _site
+
+gems:
+  - jekyll-feed
+
+feed:
+  path: atom.xml
+
+# Compress our Css
+#sass:
+#    style: :compressed
+
+permalink: /blog/:year/:title
+
+#### SEO Stuff
+# Google Analytics
+google_universal_analytics:
+google_universal_analytics_cookiedomain: auto
